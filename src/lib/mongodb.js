@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const uri = "mongodb+srv://anish2272002:Anish%402272002@cluster0.0cjmawe.mongodb.net/github_hooks?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGODB_URI;
 const options = {};
 
 let client;
